@@ -1,38 +1,144 @@
-.contact-logo-container {
-	display: flex;
-	justify-content: left;
-	padding-top: 25px;
-}
-
-.contact-logo {
-	display: flex;
-	position: fixed;
-	border: 1px solid white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
-}
-
-.contact-subtitle {
-	width: 100% !important;
-}
-
-.contact-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin-top: 120px;
-}
-
-
-.socials-container {
-	display: flex;
-	flex-direction: column;
+/* Tambahkan ke file contact.css atau buat file baru experience.css */
+.contact-container{
 	margin-top: 80px;
 }
 
-.contact-socials {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+.experience-section {
+    margin: 40px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.experience-section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.experience-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+    flex: 1;
+}
+
+.experience-period {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.experience-type {
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.experience-organization {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.experience-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.achievement-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.achievement-link:hover {
+    color: #007bff;
+    transform: translateX(5px);
+}
+
+.achievement-link:hover h3 {
+    color: #007bff;
+}
+
+.certificate-note {
+    margin-top: 5px;
+}
+
+.certificate-note small {
+    color: #888;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .experience-period {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .experience-item {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-section {
+        margin: 20px 0;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .experience-header h3 {
+        font-size: 16px;
+    }
 }

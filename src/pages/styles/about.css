@@ -51,9 +51,23 @@
 	display: inline-block;
 	overflow: hidden;
 	width: 100%;
-	border-radius: 10%;
-	transform: rotate(3deg);
+	border-radius: 8px; /* Mengubah dari 10% menjadi 8px untuk sudut yang lebih formal */
+	/* Menghilangkan rotasi sepenuhnya untuk membuat gambar formal dan tidak miring */
+	transform: none !important;
+	transition: transform 0.3s ease;
+	/* Memastikan gambar benar-benar lurus dan formal */
+	position: relative;
 }
+
+/* Menghilangkan hover effect untuk tampilan yang lebih formal */
+.about-image-wrapper:hover {
+	transform: none !important; /* Tidak ada efek hover untuk tampilan formal */
+}
+
+/* Menghilangkan hover effect yang bisa menyebabkan gambar bergerak */
+/* .about-image-wrapper:hover {
+	transform: scale(1.02);
+} */
 
 .about-image-wrapper img {
 	display: block;
@@ -80,20 +94,27 @@
 
 	.about-subtitle {
 		padding-top: 20px !important;
+		padding-bottom: 60px !important; /* Menambah ruang bawah subtitle */
 	}
 
 	.about-left-side {
 		flex-basis: 100%;
-		order: 1;
+		order: 2; /* Mengubah order menjadi 2, agar gambar di bawah */
+		/* Menambahkan margin top untuk memberikan ruang dari text */
+		margin-top: 80px;
 	}
 
 	.about-right-side {
 		flex-basis: 100%;
-		order: 2;
+		order: 1; /* Mengubah order menjadi 1, agar text di atas */
+		margin-top: 120px; /* Memberikan ruang lebih dari navbar */
 	}
 
 	.about-image-container {
 		padding-bottom: 40px;
+		/* Mengecilkan gambar di tablet */
+		width: 250px; /* Dikecilkan dari 300px */
+		margin: 0 auto;
 	}
 
 	.about-socials {
@@ -111,12 +132,73 @@
 		padding-top: 60px;
 	}
 
+	.about-right-side {
+		/* Menambahkan margin top yang sangat besar untuk mobile */
+		margin-top: 120px; /* Ditambah besar dari 100px */
+	}
+
+	.about-left-side {
+		/* Menambah margin top yang sangat besar untuk memberikan jarak */
+		margin-top: 120px; /* Ditambah besar dari 80px */
+	}
+
 	.about-image-container {
-		width: 80%;
+		width: 50%; /* Dikecilkan lagi dari 60% */
+		/* Memastikan gambar berada di tengah */
+		margin: 0 auto;
+		max-width: 180px; /* Dikecilkan dari 200px */
+	}
+
+	/* Menyesuaikan judul agar tidak tertimpa gambar */
+	.about-title {
+		margin-bottom: 40px; /* Ditambah dari 30px */
+		font-size: 1.9rem; /* Dikecilkan sedikit */
+		line-height: 1.3;
+	}
+
+	.about-subtitle {
+		margin-bottom: 100px; /* Ditambah besar dari 60px */
+		width: 95% !important;
+		padding-bottom: 60px !important; /* Ditambah dari 40px */
 	}
 }
 
-/* Skills Section Styles - Tambahkan ke about.css */
+/* Media query khusus untuk layar sangat kecil */
+@media (max-width: 480px) {
+	.about-container {
+		padding-top: 80px;
+	}
+
+	.about-right-side {
+		margin-top: 100px; /* Ditambah dari 80px */
+	}
+
+	.about-left-side {
+		margin-top: 150px; /* Ditambah sangat besar dari 100px */
+	}
+
+	.about-image-container {
+		width: 40%; /* Dikecilkan lagi dari 50% */
+		max-width: 150px; /* Dikecilkan dari 180px */
+		margin: 30px auto 0 auto; /* Tambahan margin top yang besar */
+	}
+
+	.about-title {
+		font-size: 1.7rem; /* Dikecilkan dari 1.8rem */
+		line-height: 1.3;
+		margin-bottom: 30px;
+	}
+
+	.about-subtitle {
+		width: 100% !important;
+		font-size: 0.9rem; /* Dikecilkan dari 0.95rem */
+		line-height: 1.5;
+		margin-bottom: 120px; /* Ditambah sangat besar dari 80px */
+		padding-bottom: 40px !important;
+	}
+}
+
+/* Skills Section Styles */
 
 .skills-container {
   margin-top: 4rem;

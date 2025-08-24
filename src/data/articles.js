@@ -111,13 +111,16 @@ function experience_2() {
 		date: "May 2024 - August 2024",
 		title: "Full Stack Developer at Permana Solutions",
 		description:
-			"Developed a comprehensive microservices-based web application for explosive material transportation planning using .NET backend and Next.js frontend with REST API integration.",
+			"Developed a comprehensive microservices-based web application for explosive material transportation planning using C# Clean Architecture, .NET backend, Next.js frontend with Docker containerization and JWT authentication.",
 		keywords: [
 			"Permana Solutions",
 			"Full Stack Developer",
+			"C# Clean Architecture",
 			".NET",
 			"Next.js",
 			"Microservices",
+			"Docker",
+			"JWT Authentication",
 			"REST API",
 			"Dedi Andre",
 		],
@@ -144,12 +147,44 @@ function experience_2() {
 					border: 1px solid #bbdefb;
 				}
 
+				.tech-item.architecture {
+					background: #f3e5f5;
+					color: #7b1fa2;
+					border: 1px solid #ce93d8;
+				}
+
+				.tech-item.docker {
+					background: #e8f5e8;
+					color: #2e7d32;
+					border: 1px solid #a5d6a7;
+				}
+
 				.architecture-diagram {
 					background: #f5f5f5;
 					padding: 20px;
 					border-radius: 10px;
 					margin: 20px 0;
 					text-align: center;
+				}
+
+				.microservices-grid {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+					gap: 15px;
+					margin: 20px 0;
+				}
+
+				.microservice-item {
+					background: #fff;
+					padding: 15px;
+					border-radius: 8px;
+					border-left: 4px solid #2196f3;
+					box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+				}
+
+				.microservice-item h4 {
+					margin: 0 0 10px 0;
+					color: #1976d2;
 				}
 
 				.module-list {
@@ -171,64 +206,110 @@ function experience_2() {
 			<React.Fragment>
 				<div className="article-content">
 					<div className="paragraph">
-						<h2>Full Stack Developer Experience</h2>
+						<h2>Full Stack Developer Experience - Microservices Architecture</h2>
 						<p>
-							During my internship at Permana Solutions (May - August 2024), I worked on a sophisticated 
-							microservices-based web application for explosive material transportation planning, gaining 
-							valuable experience in modern full-stack development.
+							During my internship at Permana Solutions (May - August 2024), I developed a sophisticated 
+							microservices-based web application for explosive material transportation planning, implementing 
+							modern software architecture patterns with C# Clean Architecture and containerization.
 						</p>
 
 						<div className="tech-stack">
+							<span className="tech-item architecture">C# Clean Architecture</span>
 							<span className="tech-item">.NET Core</span>
 							<span className="tech-item">Next.js</span>
 							<span className="tech-item">React</span>
+							<span className="tech-item docker">Docker</span>
+							<span className="tech-item">JWT Authentication</span>
 							<span className="tech-item">Microservices</span>
 							<span className="tech-item">REST API</span>
 							<span className="tech-item">TypeScript</span>
 						</div>
 
 						<div className="architecture-diagram">
-							<h3>🏗️ System Architecture</h3>
+							<h3>🏗️ System Architecture Overview</h3>
 							<p>
-								<strong>Frontend:</strong> Next.js with React components<br/>
-								<strong>Backend:</strong> .NET Core microservices<br/>
-								<strong>Communication:</strong> REST API integration<br/>
-								<strong>Architecture:</strong> Distributed microservices pattern
+								<strong>Frontend:</strong> Next.js with React components and TypeScript<br/>
+								<strong>Backend:</strong> C# .NET Core microservices with Clean Architecture<br/>
+								<strong>Authentication:</strong> JWT-based security implementation<br/>
+								<strong>Containerization:</strong> Docker for service deployment and orchestration<br/>
+								<strong>Communication:</strong> REST API integration between services
 							</p>
 						</div>
 
-						<h3>System Modules Developed:</h3>
-						<div className="module-list">
-							<div className="module-item">
-								<h4>🏢 Vendor Form Module</h4>
-								<p>Comprehensive vendor registration and management system with validation and approval workflows.</p>
+						<h3>🚀 Microservices Implementation (11 Services):</h3>
+						<div className="microservices-grid">
+							<div className="microservice-item">
+								<h4>🔐 wahana_auth</h4>
+								<p>JWT authentication service with user management, role-based access control, and token validation.</p>
 							</div>
-							<div className="module-item">
-								<h4>📋 Pre-Operational Module</h4>
-								<p>Planning and preparation phase management for transportation logistics and safety protocols.</p>
+							<div className="microservice-item">
+								<h4>📄 wahana_content</h4>
+								<p>Content management system for application data, documentation, and media handling.</p>
 							</div>
-							<div className="module-item">
-								<h4>🚛 Operational Module</h4>
-								<p>Real-time transportation tracking and monitoring system with status updates and notifications.</p>
+							<div className="microservice-item">
+								<h4>🔗 wahana_third_party</h4>
+								<p>Third-party integration service for external APIs, payment gateways, and external systems.</p>
 							</div>
-							<div className="module-item">
-								<h4>✅ Approval Module</h4>
-								<p>Multi-level approval system with role-based access control and audit trail functionality.</p>
+							<div className="microservice-item">
+								<h4>📦 wahana_product</h4>
+								<p>Product catalog management with inventory tracking and product information systems.</p>
+							</div>
+							<div className="microservice-item">
+								<h4>📊 wahana_journal</h4>
+								<p>Financial journaling and transaction logging service with audit trail capabilities.</p>
+							</div>
+							<div className="microservice-item">
+								<h4>🏢 wahana_vendor_form</h4>
+								<p>Vendor registration and management system with comprehensive vendor profiling.</p>
+							</div>
+							<div className="microservice-item">
+								<h4>🛒 wahana_purchase_order</h4>
+								<p>Purchase order management with approval workflows and procurement tracking.</p>
+							</div>
+							<div className="microservice-item">
+								<h4>📋 wahana_pre_operational</h4>
+								<p>Pre-operational planning module for transportation logistics and safety protocols.</p>
+							</div>
+							<div className="microservice-item">
+								<h4>🚛 wahana_operational</h4>
+								<p>Real-time operational tracking system with monitoring and status management.</p>
+							</div>
+							<div className="microservice-item">
+								<h4>✅ wahana_approval_step</h4>
+								<p>Multi-level approval workflow engine with configurable approval chains.</p>
 							</div>
 						</div>
 
+						<h3>🏛️ Clean Architecture Implementation:</h3>
+						<ul>
+							<li><strong>Domain Layer:</strong> Core business entities, value objects, and domain services</li>
+							<li><strong>Application Layer:</strong> Use cases, interfaces, and application services</li>
+							<li><strong>Infrastructure Layer:</strong> Data access, external services, and framework implementations</li>
+							<li><strong>Presentation Layer:</strong> API controllers, DTOs, and request/response models</li>
+						</ul>
+
+						<h3>🐳 Docker Containerization:</h3>
+						<ul>
+							<li><strong>Service Isolation:</strong> Each microservice deployed in separate containers</li>
+							<li><strong>Orchestration:</strong> Docker Compose for local development environment</li>
+							<li><strong>Scalability:</strong> Independent scaling of services based on demand</li>
+							<li><strong>Environment Consistency:</strong> Consistent deployment across development and production</li>
+						</ul>
+
 						<h3>Key Learning Outcomes:</h3>
 						<ul>
-							<li><strong>Microservices Architecture:</strong> Gained hands-on experience in designing and implementing distributed systems</li>
-							<li><strong>Full Stack Development:</strong> Mastered end-to-end development from frontend UI to backend APIs</li>
-							<li><strong>REST API Integration:</strong> Implemented robust API communication between services</li>
-							<li><strong>Modern Frontend:</strong> Advanced React and Next.js development with TypeScript</li>
-							<li><strong>Enterprise Development:</strong> Worked with complex business requirements in a professional environment</li>
+							<li><strong>Clean Architecture:</strong> Mastered separation of concerns and dependency inversion principles</li>
+							<li><strong>Microservices Design:</strong> Implemented distributed system patterns and inter-service communication</li>
+							<li><strong>JWT Security:</strong> Developed secure authentication and authorization mechanisms</li>
+							<li><strong>Docker Expertise:</strong> Gained proficiency in containerization and orchestration</li>
+							<li><strong>C# Advanced Patterns:</strong> Applied modern C# features and design patterns</li>
+							<li><strong>API Design:</strong> Created RESTful APIs following industry best practices</li>
 						</ul>
 
 						<p>
-							This experience significantly enhanced my full-stack development skills and provided deep insights 
-							into enterprise-level software architecture and development practices.
+							This comprehensive microservices project provided invaluable experience in modern software 
+							architecture, containerization, and enterprise-level development practices using cutting-edge 
+							technologies and architectural patterns.
 						</p>
 					</div>
 				</div>

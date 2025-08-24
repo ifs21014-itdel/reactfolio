@@ -45,6 +45,13 @@ const Works = () => {
 		},
 		{
 			image: "./itdel.png",
+			alt: "IT Del Festival",
+			title: "IT Del Festival",
+			subtitle: "Head of IT Del Fest 2023",
+			duration: "Jun 2023 - Aug 2023"
+		},
+		{
+			image: "./itdel.png",
 			alt: "IT Del KPU",
 			title: "KPU IT Del",
 			subtitle: "Head of Election Commission",
@@ -52,10 +59,10 @@ const Works = () => {
 		},
 		{
 			image: "./itdel.png",
-			alt: "IT Del Festival",
-			title: "IT Del Festival",
-			subtitle: "Head of IT Del Fest 2023",
-			duration: "Jun 2023 - Aug 2023"
+			alt: "MPM KM IT Del",
+			title: "MPM KM IT Del ",
+			subtitle: "Member of Commission B",
+			duration: "Jun 2022 - May 2023"
 		}
 	];
 
@@ -90,13 +97,6 @@ const Works = () => {
 			title: "Institut Teknologi Del",
 			subtitle: "Bachelor of Science in Informatics",
 			duration: "2021 - 2025 | GPA: 3.65/4.00"
-		},
-		{
-			image: "./itdel.png",
-			alt: "Focus Areas",
-			title: "Specialization Focus",
-			subtitle: "Software Engineering & Cyber Security",
-			duration: "Computer Science & Data Science"
 		}
 	];
 

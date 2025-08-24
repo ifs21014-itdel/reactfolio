@@ -43,12 +43,21 @@
 
 .homepage-image-wrapper {
 	overflow: hidden;
-	border-radius: 10%;
-	transform: rotate(3deg);
+	border-radius: 8px; /* Mengubah dari 10% menjadi 8px untuk tampilan lebih formal */
+	/* Menghilangkan rotasi untuk membuat gambar tidak miring */
+	/* transform: rotate(3deg); */
+	transform: none !important; /* Memastikan gambar benar-benar lurus */
+	transition: transform 0.3s ease;
+}
+
+/* Hover effect yang halus tanpa rotasi */
+.homepage-image-wrapper:hover {
+	transform: scale(1.02) !important;
 }
 
 .homepage-image-wrapper img {
 	width: 100%;
+	display: block; /* Menghilangkan gap di bawah gambar */
 }
 
 .homepage-socials {
@@ -94,16 +103,22 @@
 }
 
 @media (max-width: 1024px) {
+	.homepage-logo-container {
+		padding-top: 100px; /* Mengurangi sedikit untuk memberikan ruang */
+	}
+
 	.homepage-first-area {
 		flex-direction: column;
+		gap: 20px; /* Menambahkan gap antar elemen */
 	}
 
 	.homepage-first-area-left-side {
 		display: flex;
-		flex-direction: column; /* Changed: set direction to column */
+		flex-direction: column;
 		align-items: flex-start;
 		width: 100%;
-		order: 2;
+		order: 2; /* Text di bawah gambar */
+		margin-top: 30px; /* Memberikan jarak dari gambar */
 	}
 
 	.homepage-title {
@@ -114,20 +129,24 @@
 
 	.homepage-subtitle {
 		width: 100% !important;
-		margin-top: 10px;
+		margin-top: 15px;
 		order: 3;
 	}
 
 	.homepage-first-area-right-side {
 		width: 100%;
-		order: 1;
+		order: 1; /* Gambar di atas text */
+		display: flex;
+		justify-content: center; /* Memusatkan gambar */
 	}
 
 	.homepage-image-container {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		margin-left: 10px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: 0; /* Menghilangkan margin-left */
 		order: 1;
+		width: 300px; /* Mengecilkan gambar di tablet */
+		height: 300px;
 	}
 
 	.homepage-after-title {
@@ -146,5 +165,89 @@
 		flex-basis: auto;
 		margin-left: -25px;
 		margin-right: -25px;
+	}
+}
+
+/* Media query untuk mobile */
+@media (max-width: 768px) {
+	.homepage-logo-container {
+		padding-top: 80px;
+	}
+
+	.homepage-container {
+		padding-top: 20px;
+	}
+
+	.homepage-first-area {
+		gap: 30px;
+	}
+
+	.homepage-first-area-left-side {
+		margin-top: 40px; /* Memberikan jarak lebih besar dari gambar */
+	}
+
+	.homepage-image-container {
+		width: 250px; /* Mengecilkan gambar di mobile */
+		height: 250px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.homepage-title {
+		margin-top: 25px;
+		font-size: 2.2rem; /* Menyesuaikan ukuran font */
+	}
+
+	.homepage-subtitle {
+		margin-top: 20px;
+		font-size: 1rem;
+	}
+
+	.homepage-socials {
+		padding-top: 25px;
+	}
+}
+
+/* Media query untuk mobile kecil */
+@media (max-width: 480px) {
+	.homepage-logo-container {
+		padding-top: 60px;
+	}
+
+	.homepage-first-area {
+		gap: 40px;
+	}
+
+	.homepage-first-area-left-side {
+		margin-top: 50px; /* Jarak yang lebih besar untuk layar kecil */
+	}
+
+	.homepage-image-container {
+		width: 200px; /* Mengecilkan gambar lebih kecil */
+		height: 200px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.homepage-title {
+		margin-top: 30px;
+		font-size: 2rem;
+		width: 100% !important;
+	}
+
+	.homepage-subtitle {
+		margin-top: 25px;
+		font-size: 0.95rem;
+		width: 100% !important;
+	}
+
+	.homepage-socials {
+		padding-top: 20px;
+		justify-content: center; /* Memusatkan social media icons */
+	}
+
+	.homepage-social-icon {
+		padding-right: 15px;
+		font-size: 22px;
 	}
 }

@@ -14,7 +14,7 @@ const INFO = {
 
 	homepage: {
 		title: "Dedi Andre Martua Raja Panggabean",
-		description: "Backend & Full Stack Developer experienced in building scalable, secure, and high-performance applications using .NET, Go, PHP, JavaScript, and modern frameworks like Next.js, Express.js, Laravel, and CodeIgniter. Skilled in microservices architecture, API integration (REST & gRPC), and database management with SQL Server, PostgreSQL, and MariaDB. Passionate about clean code, problem-solving, and delivering impactful solutions."
+		description: ""
 	},
 
 	about: {
@@ -23,7 +23,7 @@ const INFO = {
 	},
 
 		articles: {
-		title: "My Professional Journey: Building Scalable Solutions and Growing as a Developer",
+		title: "Work Experiences",
 		description: "Explore my work experiences from fresh graduate to full-stack developer, showcasing projects in ERP systems, mobile applications, and microservices architecture.",
 	},
 
@@ -76,6 +76,24 @@ const INFO = {
 			link: "https://dev.wahanabhara.permanasolutions.co.id/login",
 			technologies: [".NET", "Next.js", "Microservices", "REST API", "Full Stack"],
 			period: "May 2024 - Aug 2024"
+		},
+		{
+			title: "SEMAT Institut Teknologi Del",
+			description: "Building a New Student Admissions website at the Del Institute of Technology",
+			logo: "./itdel.png",
+			linkText: "Semat Del",
+			link: "https://semat.del.ac.id/",
+			technologies: ["Laravel", "PHP", "Javascript"],
+			period: "October 2023 - January 2023"
+		},
+			{
+			title: "AMI Institut Teknologi Del",
+			description: "Building a Quality Assurance System Website for the Del Institute of Technology",
+			logo: "./itdel.png",
+			linkText: "AMI Del",
+			link: "https://github.com/gabrielhtg/SPM-ITDel",
+			technologies: ["Laravel", "PHP", "Javascript"],
+			period: "January 2024 - May 2024"
 		},
 	],
 
