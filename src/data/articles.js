@@ -2,10 +2,10 @@ import React from "react";
 
 function experience_1() {
 	return {
-		date: "September 2024 - Present",
+		date: "Sept 2024 - August 2025",
 		title: "Web Developer and Mobile Developer at PT Citra Bonang",
 		description:
-			"Leading multiple projects including Etos App for furniture testing documentation, Ebako-Latey mobile application for sales tracking, and modernizing Ebako ERP systems using PHP and CodeIgniter.",
+			"I led the migration and modernization of the Ebako ERP system to enhance performance and maintainability, and developed the Etos App with furniture testing documentation features (Drop Test, Hot-Cold Test, Hardness Test, and Print Mark Test). In addition, I created new features for the Ebako-Latey Mobile Application to support sales item input and tracking, and enhanced the Ebako Costing Application by adding change logs, new pricing modules, cost previews, and quotation data migration.",
 		keywords: [
 			"PT Citra Bonang",
 			"Web Developer",

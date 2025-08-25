@@ -16,11 +16,11 @@ const Logo = (props) => {
 		<img src={INFO.main.logo} alt="logo" className="logo" width={width} />
 	);
 
-	return (
-		<React.Fragment>
-			{link ? <Link to="/">{imageElement}</Link> : imageElement}
-		</React.Fragment>
-	);
+	// return (
+	// 	// <React.Fragment>
+	// 	// 	{link ? <Link to="/">{imageElement}</Link> : imageElement}
+	// 	// </React.Fragment>
+	// );
 };
 
 export default Logo;

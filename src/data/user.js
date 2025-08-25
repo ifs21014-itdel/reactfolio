@@ -19,7 +19,7 @@ const INFO = {
 
 	about: {
 		title: "Dedi Andre Martua Raja Panggabean",
-		description: "As a fresh graduate in Informatics with hands-on experience in software development, I am passionate about leveraging technology to create meaningful solutions. I've worked on various projects ranging from ERP systems to mobile applications, and I'm always eager to take on new challenges. My experience spans across different technologies including .NET, Next.js, mobile development, and microservices architecture. I believe in continuous learning and contributing to the tech community through clean code and innovative problem-solving.",
+		description: "I was born in Tarutung on February 22, 2002, and graduated from Institut Teknologi Del with a degree in Informatics. As a fresh graduate with hands-on industry experience, I have worked on various projects ranging from ERP systems and mobile applications to microservices-based architectures.My technical expertise includes .NET, Next.js, mobile development, and system integration using REST and gRPC. I strongly believe in continuous learning, collaboration, and contributing to the tech community through clean code, innovative solutions, and effective problem-solving.I am always eager to take on new challenges, grow as a Software Engineer, and create meaningful solutions that deliver real impact.",
 	},
 
 		articles: {

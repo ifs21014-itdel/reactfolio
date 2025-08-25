@@ -51,23 +51,15 @@
 	display: inline-block;
 	overflow: hidden;
 	width: 100%;
-	border-radius: 8px; /* Mengubah dari 10% menjadi 8px untuk sudut yang lebih formal */
-	/* Menghilangkan rotasi sepenuhnya untuk membuat gambar formal dan tidak miring */
+	border-radius: 8px;
 	transform: none !important;
 	transition: transform 0.3s ease;
-	/* Memastikan gambar benar-benar lurus dan formal */
 	position: relative;
 }
 
-/* Menghilangkan hover effect untuk tampilan yang lebih formal */
 .about-image-wrapper:hover {
-	transform: none !important; /* Tidak ada efek hover untuk tampilan formal */
+	transform: none !important;
 }
-
-/* Menghilangkan hover effect yang bisa menyebabkan gambar bergerak */
-/* .about-image-wrapper:hover {
-	transform: scale(1.02);
-} */
 
 .about-image-wrapper img {
 	display: block;
@@ -94,26 +86,25 @@
 
 	.about-subtitle {
 		padding-top: 20px !important;
-		padding-bottom: 60px !important; /* Menambah ruang bawah subtitle */
+		padding-bottom: 60px !important;
 	}
 
 	.about-left-side {
 		flex-basis: 100%;
-		order: 2; /* Mengubah order menjadi 2, agar gambar di bawah */
-		/* Menambahkan margin top untuk memberikan ruang dari text */
+		order: 2;
 		margin-top: 80px;
 	}
 
 	.about-right-side {
 		flex-basis: 100%;
-		order: 1; /* Mengubah order menjadi 1, agar text di atas */
-		margin-top: 120px; /* Memberikan ruang lebih dari navbar */
+		order: 1;
+		margin-top: 120px;
 	}
 
 	.about-image-container {
 		padding-bottom: 40px;
-		/* Mengecilkan gambar di tablet */
-		width: 250px; /* Dikecilkan dari 300px */
+		/* Membuat gambar lebih besar di tablet */
+		width: 300px; /* Diperbesar dari 250px */
 		margin: 0 auto;
 	}
 
@@ -133,33 +124,30 @@
 	}
 
 	.about-right-side {
-		/* Menambahkan margin top yang sangat besar untuk mobile */
-		margin-top: 120px; /* Ditambah besar dari 100px */
+		margin-top: 120px;
 	}
 
 	.about-left-side {
-		/* Menambah margin top yang sangat besar untuk memberikan jarak */
-		margin-top: 120px; /* Ditambah besar dari 80px */
+		margin-top: 80px; /* Dikurangi dari 120px untuk mendekatkan gambar ke teks */
 	}
 
 	.about-image-container {
-		width: 50%; /* Dikecilkan lagi dari 60% */
-		/* Memastikan gambar berada di tengah */
+		/* Membuat gambar jauh lebih besar di mobile */
+		width: 75%; /* Diperbesar dari 50% */
 		margin: 0 auto;
-		max-width: 180px; /* Dikecilkan dari 200px */
+		max-width: 280px; /* Diperbesar dari 180px */
 	}
 
-	/* Menyesuaikan judul agar tidak tertimpa gambar */
 	.about-title {
-		margin-bottom: 40px; /* Ditambah dari 30px */
-		font-size: 1.9rem; /* Dikecilkan sedikit */
+		margin-bottom: 40px;
+		font-size: 1.9rem;
 		line-height: 1.3;
 	}
 
 	.about-subtitle {
-		margin-bottom: 100px; /* Ditambah besar dari 60px */
+		margin-bottom: 60px; /* Dikurangi dari 100px */
 		width: 95% !important;
-		padding-bottom: 60px !important; /* Ditambah dari 40px */
+		padding-bottom: 40px !important; /* Dikurangi dari 60px */
 	}
 }
 
@@ -170,31 +158,40 @@
 	}
 
 	.about-right-side {
-		margin-top: 100px; /* Ditambah dari 80px */
+		margin-top: 100px;
 	}
 
 	.about-left-side {
-		margin-top: 150px; /* Ditambah sangat besar dari 100px */
+		margin-top: 100px; /* Dikurangi dari 150px */
 	}
 
 	.about-image-container {
-		width: 40%; /* Dikecilkan lagi dari 50% */
-		max-width: 150px; /* Dikecilkan dari 180px */
-		margin: 30px auto 0 auto; /* Tambahan margin top yang besar */
+		/* Membuat gambar sangat besar di layar kecil */
+		width: 70%; /* Diperbesar dari 40% */
+		max-width: 250px; /* Diperbesar dari 150px */
+		margin: 20px auto 0 auto; /* Dikurangi margin top dari 30px */
 	}
 
 	.about-title {
-		font-size: 1.7rem; /* Dikecilkan dari 1.8rem */
+		font-size: 1.7rem;
 		line-height: 1.3;
 		margin-bottom: 30px;
 	}
 
 	.about-subtitle {
 		width: 100% !important;
-		font-size: 0.9rem; /* Dikecilkan dari 0.95rem */
+		font-size: 0.9rem;
 		line-height: 1.5;
-		margin-bottom: 120px; /* Ditambah sangat besar dari 80px */
-		padding-bottom: 40px !important;
+		margin-bottom: 80px; /* Dikurangi dari 120px */
+		padding-bottom: 30px !important; /* Dikurangi dari 40px */
+	}
+}
+
+/* Media query tambahan untuk layar HP yang sangat kecil */
+@media (max-width: 360px) {
+	.about-image-container {
+		width: 80%; /* Lebih besar lagi untuk HP kecil */
+		max-width: 220px;
 	}
 }
 

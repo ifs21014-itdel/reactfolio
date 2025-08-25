@@ -2,7 +2,7 @@ import React from "react";
 
 function experience_1() {
 	return {
-		date: "September 2024 - Present",
+		date: "Sept 2024 - August 2025",
 		title: "Web Developer and Mobile Developer at PT Citra Bonang",
 		description:
 			"Leading multiple projects including Etos App for furniture testing documentation, Ebako-Latey mobile application for sales tracking, and modernizing Ebako ERP systems using PHP and CodeIgniter.",
